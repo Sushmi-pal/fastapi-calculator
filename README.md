@@ -26,10 +26,10 @@ ___
 ## To run with Docker
 
 1. Build the Docker image
->docker build -t fastapi-app .
+>docker build -t fastapi-app:v1.0.0 .
 
 2. Run the Docker container
->docker run -p 8000:8000 fastapi-calculator
+>docker run -p 8000:8000 fastapi-app:v1.0.0
 
 
 
