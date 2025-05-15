@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from endpoints.model.model import CalcRequest
-from src.calculate import test_function
+from src.calculate import new_function
 
 router = APIRouter(
     prefix = "/assignment",
@@ -13,7 +13,7 @@ async def test_post(req: CalcRequest):
     operands = req.operands
     operation = req.operation.lower()
 
-    output = await test_function(operands=operands, op=operation)
+    output = await new_function(operands=operands, op=operation)
 
     return {
         "response": output

@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 
-async def test_function(operands, op):
+async def new_function(operands, op):
     if len(operands) < 2:
         raise HTTPException(status_code=400, detail="At least two operands are required.")
 
