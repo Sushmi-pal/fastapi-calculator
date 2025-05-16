@@ -40,6 +40,13 @@ docker build -t fastapi-app:v1.0.0 .
 docker run -p 8000:8000 fastapi-app:v1.0.0
 ```
 
+## Simply pull and run the project hosted on Dockerhub
+```
+docker pull sushmitapalikhe/fastapi-calculator
+```
 
+```
+docker run -p 8000:8000 sushmitapalikhe/fastapi-calculator
+```
 
 
